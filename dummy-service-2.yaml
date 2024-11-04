@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: dummy-service-2
+  labels:
+    app: dummy-service-2
+spec:
+  containers:
+    - name: dummy-container
+      image: hashicorp/http-echo
+      args:
+        - "-text=Hello from Service 2"

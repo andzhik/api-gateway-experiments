@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: service-1
+spec:
+  selector:
+    app: dummy-service-1
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 5678
